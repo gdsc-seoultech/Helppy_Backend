@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, Response
+from flask import Flask, jsonify, request
 import base64
 from easy_ocr_model import ocr_model
 

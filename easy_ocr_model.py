@@ -4,7 +4,7 @@ import easyocr
 import re
 
 # ocr 모델 활성화
-reader = easyocr.Reader(['ko','en'], gpu=False)
+reader = easyocr.Reader(['ko','en'], gpu=True)
 
 def ocr_model(data):
   encoded_img = np.frombuffer(data, dtype=np.uint8)
