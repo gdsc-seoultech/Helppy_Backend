@@ -19,5 +19,5 @@ def hello():
     return res, 200
   return jsonify({"recognized_text": "None"}), 401
 
-
-app.run(port=8080)
+if __name__ == '__main__':
+  app.run(port=8080)
