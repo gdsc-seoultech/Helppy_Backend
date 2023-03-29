@@ -5,7 +5,7 @@ from easy_ocr_model import ocr_model
 app = Flask(__name__)
 
 
-@app.route("/img-src", methods=["GET"])
+@app.route("/img-src", methods=["POST"])
 def hello():
   req = request.get_json()
   encoded_data = req["base64"]
